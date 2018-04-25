@@ -9,8 +9,9 @@
 namespace Test;
 
 use OC\Log;
+use OCP\Log\IWriter;
 
-class LoggerTest extends TestCase implements Log\IWritable {
+class LoggerTest extends TestCase implements IWriter {
 
 	/** @var \OC\SystemConfig|\PHPUnit_Framework_MockObject_MockObject */
 	private $config;
